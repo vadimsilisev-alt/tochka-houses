@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#191B17">
+    <meta name="description" content="Точка — частные дома, Москва. Архитектурная концепция «Контур»: от архитектуры до основания.">
+    <title>Точка — частные дома · Москва</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body id="top">
+    <svg class="scene-mask-definitions" aria-hidden="true" width="0" height="0">
+      <defs>
+        <path id="scene-envelope" d="M .13 .023 L .84 .023 L .84 .38 C .90 .405 .99 .435 1.04 .50 L 1.04 .78 L .625 1.02 L -.04 .78 L -.04 .49 C .025 .47 .07 .435 .13 .415 Z" />
+        <filter id="scene-edge" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation=".012" />
+        </filter>
+        <mask id="scene-background" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="1" height="1">
+          <use href="#scene-envelope" fill="white" filter="url(#scene-edge)" />
+        </mask>
+      </defs>
+    </svg>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Точка — на главную">точка<span aria-hidden="true"></span></a>
+        <a class="button button-outline header-cta" href="#discussion" data-discussion data-application-destination="sheets" data-application-ready="true">Обсудить строительство<span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero-scroll" aria-labelledby="hero-title">
+        <div class="hero-stage container">
+        <div class="hero">
+        <div class="hero-intro">
+          <p class="eyebrow">Частные дома · Москва</p>
+          <h1 id="hero-title" tabindex="-1">Дом начинается<br class="title-break"> с понимания.</h1>
+          <p class="lead">От архитектуры до основания — рассмотрите устройство дома и обсудите свой проект.</p>
+          <a class="button button-primary" href="#discussion" data-discussion data-application-destination="telegram">Обсудить строительство<span aria-hidden="true">↗</span></a>
+          <a class="skip-layers" href="#hero-end">Пропустить просмотр слоёв<span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="house-figure" aria-label="Архитектурная концепция двухэтажного дома «Контур» на срезе участка. Пять видов показывают внешний облик, несущие конструкции, помещения, первый этаж и основание.">
+          <div class="house-scene">
+            <div class="scene-stack">
+              <div class="house-layer" data-layer="0">
+                <img src="./hero-master.png" width="1391" height="1131" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
+              </div>
+            </div>
+            <span class="scan-line" aria-hidden="true" hidden></span>
+          </div>
+          <figcaption>
+            <div class="state-copy">
+              <p class="scene-label"><span id="state-number">01 / 05</span><span id="state-title">Архитектура</span></p>
+              <p class="state-description" id="state-description">Объём, свет и связь с участком. Рассмотрите внешний облик дома.</p>
+              <p class="engineering-note" id="engineering-note" hidden>Инженерные маршруты показаны условно.</p>
+            </div>
+            <p class="visualization">Архитектурная концепция «Контур». Визуализация.</p>
+            <p class="scheme-note">Показанная схема — пример возможного решения. Конструкции для вашего участка определяются проектом.</p>
+            <p class="scene-sequence-note">Исследуем устройство дома по слоям — это не последовательность строительства</p>
+            <div class="layer-controls" role="group" aria-label="Слои дома" hidden>
+              <button type="button" data-state="0" data-note="architecture" aria-pressed="true">Архитектура</button>
+              <button type="button" data-state="1" data-note="structure" aria-pressed="false">Конструктив</button>
+              <button type="button" data-state="2" data-note="interior" data-engineering aria-pressed="false">Внутри дома</button>
+              <button type="button" data-state="3" data-note="ground-floor" aria-pressed="false">Первый этаж</button>
+              <button type="button" data-state="4" data-note="foundation" aria-pressed="false">Основание</button>
+            </div>
+            <p class="scene-hint" hidden>Выберите, что рассмотреть</p>
+          </figcaption>
+        </figure>
+        </div>
+        </div>
+      </section>
+      <section class="house-notes container" aria-labelledby="notes-title">
+        <div class="notes-heading">
+          <h2 id="notes-title">Выберите, что рассмотреть</h2>
+        </div>
+        <div class="notes-list">
+          <details id="architecture" open>
+            <summary><span class="note-number">01</span>Архитектура<span class="disclosure" aria-hidden="true">+</span></summary>
+            <p>Объём, свет и связь с участком. Рассмотрите внешний облик дома.</p>
+          </details>
+          <details id="structure" open>
+            <summary><span class="note-number">02</span>Конструктив<span class="disclosure" aria-hidden="true">+</span></summary>
+            <p>Несущие стены и перекрытия. Видно, как связаны основные части дома.</p>
+          </details>
+          <details id="interior" open>
+            <summary><span class="note-number">03</span>Внутри дома<span class="disclosure" aria-hidden="true">+</span></summary>
+            <p>Помещения и инженерные маршруты. Планировка и коммуникации рассматриваются вместе.</p>
+            <p class="engineering-note">Инженерные маршруты показаны условно.</p>
+          </details>
+          <details id="ground-floor" open>
+            <summary><span class="note-number">04</span>Первый этаж<span class="disclosure" aria-hidden="true">+</span></summary>
+            <p>Нижний ярус без отделки и лестницы. Открытая кладка показывает расположение стен.</p>
+          </details>
+          <details id="foundation" open>
+            <summary><span class="note-number">05</span>Основание<span class="disclosure" aria-hidden="true">+</span></summary>
+            <p>Плита и грунт без надземных конструкций. Реальное основание определяется участком и расчётом.</p>
+          </details>
+        </div>
+      </section>
+      <div class="hero-end container" id="hero-end" tabindex="-1">
+        <p>Архитектурная концепция «Контур». Визуализация.</p>
+      </div>
+    </main>
+    <footer class="container site-footer"><span>точка</span><span>Частные дома · Москва</span></footer>
+    <section class="discussion-fallback container" id="discussion" aria-labelledby="discussion-fallback-title">
+      <h2 id="discussion-fallback-title">Обсудить строительство</h2>
+      <p>Для отправки заявки включите JavaScript и нажмите «Обсудить строительство». Адресат будет указан в форме перед отправкой.</p>
+      <a class="text-link" href="#top">На первый экран ↑</a>
+    </section>
+    <dialog id="discussion-dialog" aria-labelledby="discussion-title" aria-describedby="discussion-description">
+      <p class="eyebrow">Точка · Частные дома</p>
+      <h2 id="discussion-title">Обсудить строительство</h2>
+      <p id="discussion-description">Расскажите об участке и о том, каким вы видите будущий дом.</p>
+      <form id="application-form" novalidate>
+        <div class="application-field">
+          <label for="application-name">Имя <span class="field-required">обязательно</span></label>
+          <input id="application-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="name-error" autofocus>
+          <p class="field-error" id="name-error" hidden></p>
+        </div>
+        <div class="application-field">
+          <label for="application-phone">Телефон <span class="field-required">обязательно</span></label>
+          <input id="application-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="40" aria-describedby="phone-hint phone-error">
+          <p class="field-hint" id="phone-hint">От 10 до 15 цифр, можно с кодом страны.</p>
+          <p class="field-error" id="phone-error" hidden></p>
+        </div>
+        <div class="application-field">
+          <label for="application-comment">О вашем доме <span class="field-required">необязательно</span></label>
+          <textarea id="application-comment" name="comment" rows="3" maxlength="2000" aria-describedby="comment-error"></textarea>
+          <p class="field-error" id="comment-error" hidden></p>
+        </div>
+        <p class="application-notice" id="application-notice">Имя, телефон и сообщение будут переданы компании через Telegram.</p>
+        <p id="application-status" class="application-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
+        <div class="application-actions">
+          <button class="button application-submit" type="submit" disabled>Отправить заявку<span aria-hidden="true">↗</span></button>
+          <button class="button button-primary" type="button" data-close-discussion>Закрыть<span aria-hidden="true">×</span></button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
