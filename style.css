@@ -58,6 +58,10 @@ p, h1, h2, figure { margin: 0; }
 .is-pinned .hero { width: 100%; }
 .is-pinned .house-scene { width: min(100%, calc(var(--scene-room) * 1.230769)); margin-inline: auto; }
 .hero-intro { grid-column: span 5; padding-block: 32px; }
+@media (min-width: 1024px) and (min-height: 700px) {
+  [data-layout-version="2"] .hero-intro { grid-column: 8 / 13; grid-row: 1; }
+  [data-layout-version="2"] .house-figure { grid-column: 1 / 8; grid-row: 1; }
+}
 .hero-intro > .eyebrow { font-size: 15px; }
 .eyebrow { font-size: 13px; letter-spacing: .04em; line-height: 1.45; color: var(--muted-dark); margin-bottom: 24px; }
 h1 { font-size: clamp(48px, 5.1vw, 80px); font-weight: 500; line-height: .98; letter-spacing: -.045em; max-width: 560px; }
@@ -174,4 +178,10 @@ body.dialog-open { overflow: hidden; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}
+
+/* Public Pages is V2 only, including the no-JS desktop fallback. */
+@media (min-width: 1024px) and (min-height: 700px) {
+  [data-fixed-layout-version="2"] .hero-intro { grid-column: 8 / 13; grid-row: 1; }
+  [data-fixed-layout-version="2"] .house-figure { grid-column: 1 / 8; grid-row: 1; }
 }

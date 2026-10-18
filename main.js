@@ -2,6 +2,13 @@ import { heroAssets } from './hero-assets.mjs';
 import { heroStagePlan } from './hero-stage-plan.mjs';
 import { setupApplicationForm } from './application-form.js';
 
+// A fixed public build cannot expose V1 via query. Local comparison stays 1/2.
+// Set before measuring the final scene rect so intro travels to either column.
+const requestedVersion = new URLSearchParams(location.search).get('version');
+const defaultVersion = document.documentElement.dataset.defaultLayoutVersion === '2' ? '2' : '1';
+document.documentElement.dataset.layoutVersion = document.documentElement.dataset.fixedLayoutVersion === '2'
+  ? '2' : ['1', '2'].includes(requestedVersion) ? requestedVersion : defaultVersion;
+
 const dialog = document.querySelector('#discussion-dialog');
 const fallback = document.querySelector('#discussion');
 let discussionTrigger = null;
